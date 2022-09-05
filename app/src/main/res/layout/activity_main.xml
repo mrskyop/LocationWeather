@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#379df1"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/weathericon"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/season">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:layout_above="@id/CityFinder">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/temp"
+            android:paddingStart="30dp"
+            android:textSize="50sp"
+            android:textStyle="italic"
+            android:text="0*C"
+            android:textColor="@color/white">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:text="Loading......."
+            android:paddingStart="30sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cityname"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:text="............"
+            android:paddingStart="30sp"
+            android:textColor="@color/white">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/CityFinder"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="95dp"
+        android:background="@drawable/buttondesign">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Enter City Name"
+            android:textColor="#379df1"
+            android:textSize="30dp"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
